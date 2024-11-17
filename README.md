@@ -2,6 +2,9 @@
 
 This project is a **React-based timeline visualization tool** that allows users to visualize and interact with layered schedules and user events. The tool supports multiple views, customizable time ranges, and smooth navigation through a visually appealing interface.
 
+## Deployed Link:
+https://zeazonztimelinechart.vercel.app/
+
 ## Features
 
 - **Dynamic Timeline**: Displays layered schedules for multiple users with unique colors for easy identification.
@@ -24,9 +27,6 @@ This project is a **React-based timeline visualization tool** that allows users 
 - **CSS**: Custom styles for further refinement.
 - **JSON**: Input data structure for dynamic rendering.
 
-## Deployed Link:
-(https://zeazonztimelinechart.vercel.app/)(https://zeazonztimelinechart.vercel.app/)
-
 ## Installation
 
 1. Clone the repository:
@@ -37,7 +37,7 @@ This project is a **React-based timeline visualization tool** that allows users 
 ## How to run: 
 - **Install Dependencies**: npm install
 - **Run the application**: npm start
-- **Open your browser and navigate to**: [Timeline visualization library.](http://localhost:3000)
+- **Open your browser and navigate to**: http://localhost:3000
 
 ## Project Structure
 src/
