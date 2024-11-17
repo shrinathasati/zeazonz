@@ -165,9 +165,25 @@ const TimelineChart = () => {
   </Button>
 
   <Button
-    onClick={() => setCurrentView("2-week")}
+    onClick={() => setCurrentView("2-weeks")}
     sx={{
       backgroundColor:"blue",  // Dark green background
+      color: "#fff",  // White text
+      '&:hover': {
+        backgroundColor: "#66bb6a",  // Lighter green on hover
+      },
+      padding: "8px 16px",  // Padding for the button
+      borderRadius: "4px",  // Rounded corners for the button
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",  // Subtle shadow for depth
+    }}
+  >
+    2-Weeks
+  </Button>
+
+  <Button
+    onClick={() => setCurrentView("week")}
+    sx={{
+      backgroundColor: "blue",  // Dark green background
       color: "#fff",  // White text
       '&:hover': {
         backgroundColor: "#66bb6a",  // Lighter green on hover
@@ -181,7 +197,7 @@ const TimelineChart = () => {
   </Button>
 
   <Button
-    onClick={() => setCurrentView("weeks")}
+    onClick={() => setCurrentView("2-days")}
     sx={{
       backgroundColor: "blue",  // Dark green background
       color: "#fff",  // White text
@@ -193,23 +209,7 @@ const TimelineChart = () => {
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",  // Subtle shadow for depth
     }}
   >
-    2-Week
-  </Button>
-
-  <Button
-    onClick={() => setCurrentView("2-day")}
-    sx={{
-      backgroundColor: "blue",  // Dark green background
-      color: "#fff",  // White text
-      '&:hover': {
-        backgroundColor: "#66bb6a",  // Lighter green on hover
-      },
-      padding: "8px 16px",  // Padding for the button
-      borderRadius: "4px",  // Rounded corners for the button
-      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",  // Subtle shadow for depth
-    }}
-  >
-    2-Day
+    2-Days
   </Button>
   <Button
     onClick={() => setCurrentView("day")}
