@@ -4,8 +4,7 @@ import "react-calendar-timeline/lib/Timeline.css";
 import { Box, Button, Tooltip, TextField, MenuItem, Select, InputLabel, FormControl } from "@mui/material";
 import dayjs from "dayjs";
 import data from "../data.json";
-import { blue } from "@mui/material/colors";
-
+import { blue, blueGrey } from "@mui/material/colors";
 // Helper function to convert data
 const parseTimelineData = (data) => {
   const groups = [
@@ -152,7 +151,7 @@ const TimelineChart = () => {
   <Button
     onClick={() => setCurrentView("month")}
     sx={{
-      backgroundColor: blue,  // Dark green background
+      backgroundColor: "blue",  // Dark green background
       color: "#fff",  // White text
       '&:hover': {
         backgroundColor: "#66bb6a",  // Lighter green on hover
@@ -166,9 +165,9 @@ const TimelineChart = () => {
   </Button>
 
   <Button
-    onClick={() => setCurrentView("week")}
+    onClick={() => setCurrentView("2-week")}
     sx={{
-      backgroundColor:blue,  // Dark green background
+      backgroundColor:"blue",  // Dark green background
       color: "#fff",  // White text
       '&:hover': {
         backgroundColor: "#66bb6a",  // Lighter green on hover
@@ -182,9 +181,9 @@ const TimelineChart = () => {
   </Button>
 
   <Button
-    onClick={() => setCurrentView("2-weeks")}
+    onClick={() => setCurrentView("weeks")}
     sx={{
-      backgroundColor: blue,  // Dark green background
+      backgroundColor: "blue",  // Dark green background
       color: "#fff",  // White text
       '&:hover': {
         backgroundColor: "#66bb6a",  // Lighter green on hover
@@ -198,9 +197,24 @@ const TimelineChart = () => {
   </Button>
 
   <Button
+    onClick={() => setCurrentView("2-day")}
+    sx={{
+      backgroundColor: "blue",  // Dark green background
+      color: "#fff",  // White text
+      '&:hover': {
+        backgroundColor: "#66bb6a",  // Lighter green on hover
+      },
+      padding: "8px 16px",  // Padding for the button
+      borderRadius: "4px",  // Rounded corners for the button
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",  // Subtle shadow for depth
+    }}
+  >
+    2-Day
+  </Button>
+  <Button
     onClick={() => setCurrentView("day")}
     sx={{
-      backgroundColor: blue,  // Dark green background
+      backgroundColor: "blue",  // Dark green background
       color: "#fff",  // White text
       '&:hover': {
         backgroundColor: "#66bb6a",  // Lighter green on hover
@@ -319,15 +333,15 @@ const TimelineChart = () => {
       <Button
   variant="contained"
   onClick={handlePreviousButton}
-  style={{ backgroundColor: "blue", color: "black", marginRight: "10px" }}
+  style={{ backgroundColor: "blue", color: "white", marginRight: "10px" }}
 >
   Previous
 </Button>
 
-        <Button variant="contained" onClick={handleTodayButton} style={{ backgroundColor: "blue", color: "black", marginRight: "10px" }}>
+        <Button variant="contained" onClick={handleTodayButton} style={{ backgroundColor: "blue", color: "white", marginRight: "10px" }}>
           Today
         </Button>
-        <Button variant="contained" onClick={handleNextButton} style={{ backgroundColor: "blue", color: "black", marginRight: "10px" }}> 
+        <Button variant="contained" onClick={handleNextButton} style={{ backgroundColor: "blue", color: "white", marginRight: "10px" }}> 
           Next
         </Button>
       </Box>
